@@ -1,14 +1,14 @@
 {
   "notes": [
     {
-      "id": "1",
-      "title": "Test Note Title",
-      "text": "Test note text #1"
+      "title": "Learn Express",
+      "text": "This isn't going to be easy...",
+      "id": "1646530360560"
     },
     {
-      "title": "Submit Assignment",
-      "text": "Got to submit the assignment.",
-      "id": "1646530116879"
+      "title": "Get Good",
+      "text": "The imposter syndrome is real!",
+      "id": "1646530377785"
     }
   ]
 }
