@@ -1,6 +1,17 @@
 const router = require('express').Router();
-const noteRoutes = require('../apiRoutes/noteRoutes');
+const { createNewNote } = require('../../lib/notes');
+const { notes } = require('../../db/db.json');
 
-router.use(noteRoutes);
+router.get('/notes', (req, res) => {
+  res.json(notes);
+});
+
+router.post('/notes', (req, res) => {
+  // Set ID to timestamp
+  req.body.id = Date.now().toString();
+
+  const note = createNewNote(req.body, notes);
+  res.json(note);
+});
 
 module.exports = router;
